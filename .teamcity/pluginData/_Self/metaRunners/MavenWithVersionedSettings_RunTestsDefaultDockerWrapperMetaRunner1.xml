@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta-runner name="run tests, default, docker wrapper, meta-runner (1)">
+  <description>run tests, default, docker wrapper, meta-runner</description>
+  <settings>
+    <parameters />
+    <build-runners>
+      <runner name="" type="Maven2">
+        <parameters>
+          <param name="goals" value="clean test" />
+          <param name="maven.path" value="%teamcity.tool.maven.DEFAULT%" />
+          <param name="plugin.docker.imageId" value="maven:3-ibmjava-8-alpine" />
+          <param name="plugin.docker.imagePlatform" value="linux" />
+          <param name="pomLocation" value="pom.xml" />
+          <param name="runnerArgs" value="-Dmaven.test.failure.ignore=true" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="userSettingsSelection" value="userSettingsSelection:default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <requirements />
+  </settings>
+</meta-runner>
+
