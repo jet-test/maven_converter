@@ -12,6 +12,7 @@
           <param name="runnerArgs" value="-Dmaven.test.failure.ignore=true" />
           <param name="teamcity.step.mode" value="default" />
           <param name="userSettingsSelection" value="userSettingsSelection:default" />
+          <param name="localRepoScope" value="mavenDefault" />
         </parameters>
       </runner>
     </build-runners>
