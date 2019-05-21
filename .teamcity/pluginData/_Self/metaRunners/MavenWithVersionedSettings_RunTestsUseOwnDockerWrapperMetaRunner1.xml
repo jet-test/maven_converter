@@ -13,7 +13,7 @@
           <param name="pomLocation" value="pom.xml" />
           <param name="runnerArgs" value="-Dmaven.test.failure.ignore=true" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="useOwnLocalRepo" value="true" />
+          <param name="localRepoScope" value="buildConfiguration" />
           <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
